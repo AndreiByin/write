@@ -8,7 +8,7 @@ public class Main {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter("c:\\temp\\"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter("c:\\temp\\write"));
             String tx;
             while (!(tx=br.readLine()).equals("stop")){
                 System.out.println(tx);
