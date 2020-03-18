@@ -5,16 +5,19 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
+        try
+                (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter("c:\\temp\\write"));
-            String tx;
+           BufferedWriter bw = new BufferedWriter(new FileWriter("c:\\temp\\write"));
+
+                ){ String tx;
             while (!(tx=br.readLine()).equals("stop")){
-                System.out.println(tx);
-                bw.write(tx + "/n");
+              //  System.out.println(tx);
+                bw.write(tx + "\n");
                 bw.flush();
+
             }
+            bw.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
