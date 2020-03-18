@@ -5,7 +5,8 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
-        int f;
+        int f1;
+
         try
                 (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
